@@ -28,6 +28,7 @@ import {
   iSendSmsConfig,
   ringCentralConfig,
   brevoSmsConfig,
+  kavenegarProviderConfig,
 } from '../credentials';
 import { SmsProviderIdEnum } from '../provider.enum';
 
@@ -270,5 +271,13 @@ export const smsProviders: IProviderConfig[] = [
     credentials: brevoSmsConfig,
     docReference: 'https://developers.brevo.com/reference/sendtransacsms',
     logoFileName: { light: 'brevo.svg', dark: 'brevo.svg' },
+  },
+  {
+    id: SmsProviderIdEnum.Kavenegar,
+    displayName: `Kavenegar`,
+    channel: ChannelTypeEnum.SMS,
+    credentials: kavenegarProviderConfig,
+    docReference: 'https://kavenegar.com/',
+    logoFileName: { light: 'kavenegar.svg', dark: 'kavenegar.svg' },
   },
 ];

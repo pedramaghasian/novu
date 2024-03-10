@@ -100,6 +100,7 @@ export enum SmsProviderIdEnum {
   AzureSms = 'azure-sms',
   RingCentral = 'ring-central',
   BrevoSms = 'brevo-sms',
+  Kavenegar = 'kavenegar',
 }
 
 export enum ChatProviderIdEnum {

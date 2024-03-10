@@ -1104,3 +1104,14 @@ export const brevoSmsConfig: IConfigCredentials[] = [
   },
   ...smsConfigBase,
 ];
+
+export const kavenegarProviderConfig: IConfigCredentials[] = [
+  {
+    key: CredentialsKeyEnum.ApiKey,
+    displayName: "API Key",
+    description: "This is API key for kavenegar provider",
+    type: "text",
+    required: true,
+  },
+  ...smsConfigBase,
+];
